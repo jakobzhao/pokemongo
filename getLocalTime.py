@@ -44,7 +44,6 @@ for feature in features:
         local_h = local.hour
         local_wd = local.weekday()
         csvfile.write("%s, %s, %s, %f, %f, %s, %d, %d\n" % (feature['properties']['type'], int(feature['properties']['speciesId']), feature['properties']['timing'], lat, lng, local.strftime("%Y-%m-%dT%H:%M:%S.%fZ"), local_h, local_wd))
-        a = 2
     except:
         pass
 
